@@ -37,11 +37,12 @@ servers:
   - url: https://integrations.servicedeskplus.com/
 components:
   securitySchemes:
-    apikeyAuth:
-      type: https
-      scheme: apikey
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: authtoken
 security:
-  - apikeyAuth: []
+  - ApiKeyAuth: []
 tags:
   - name: Request
     description: Operations related to Request module
