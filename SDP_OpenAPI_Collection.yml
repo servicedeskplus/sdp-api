@@ -26,17 +26,6 @@ info:
     Thank you for choosing **ManageEngine ServiceDesk Plus On-Premise**! We’re
     excited to support your development journey. **Happy coding!** 🚀
 
-
-    ## **⭐️** Best practices
-
-
-    - Always use [environment
-    variables](https://learning.postman.com/docs/sending-requests/managing-environments/)
-    for authentication.
-        
-    - Fork the ServiceDesk Plus REST APIs collection and choose to watch it
-        
-
     ## 🛟 Help and support
 
 
@@ -45,11 +34,11 @@ info:
     [support@servicedeskplus.com](https://mailto:support@servicedeskplus.com).
   version: 1.0.0
 servers:
-  - url: http://{{base_url}}
+  - url: https://integrations.servicedeskplus.com/
 components:
   securitySchemes:
     apikeyAuth:
-      type: http
+      type: https
       scheme: apikey
 security:
   - apikeyAuth: []
